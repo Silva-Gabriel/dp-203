@@ -1,6 +1,38 @@
 {
 	"name": "pipeline1",
 	"properties": {
+		"activities": [
+			{
+				"name": "Notebook1",
+				"type": "DatabricksNotebook",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "7.00:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [
+					{
+						"name": "input",
+						"value": "@pipeline().parameters.name"
+					}
+				],
+				"typeProperties": {
+					"notebookPath": "/adftutorial/mynotebook"
+				},
+				"linkedServiceName": {
+					"referenceName": "AzureDatabricksLinkedService",
+					"type": "LinkedServiceReference"
+				}
+			}
+		],
+		"parameters": {
+			"nome": {
+				"type": "string"
+			}
+		},
 		"annotations": []
 	}
 }
