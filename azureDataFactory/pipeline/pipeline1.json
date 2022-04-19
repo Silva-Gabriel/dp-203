@@ -13,14 +13,12 @@
 					"secureOutput": false,
 					"secureInput": false
 				},
-				"userProperties": [
-					{
-						"name": "input",
-						"value": "@pipeline().parameters.name"
-					}
-				],
+				"userProperties": [],
 				"typeProperties": {
-					"notebookPath": "/adftutorial/mynotebook"
+					"notebookPath": "/adftutorial/mynotebook",
+					"baseParameters": {
+						"input": "@pipeline().parameters.name"
+					}
 				},
 				"linkedServiceName": {
 					"referenceName": "AzureDatabricksLinkedService",
