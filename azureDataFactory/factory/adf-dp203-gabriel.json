@@ -1,0 +1,9 @@
+{
+	"name": "adf-dp203-gabriel",
+	"location": "brazilsouth",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "53511c8c-1dfb-4075-828e-b7b2e00150fd",
+		"tenantId": "cf36141c-ddd7-45a7-b073-111f66d0b30c"
+	}
+}
