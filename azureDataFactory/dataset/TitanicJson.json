@@ -1,0 +1,20 @@
+{
+	"name": "TitanicJson",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorageLinkedService",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "titanic.json",
+				"folderPath": "Data",
+				"container": "bronze"
+			}
+		},
+		"schema": {}
+	}
+}
